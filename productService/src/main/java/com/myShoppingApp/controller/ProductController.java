@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.myShoppingApp.dto.ProductRequest;
 import com.myShoppingApp.dto.ProductResponse;
-import com.myShoppingApp.model.Product;
 import com.myShoppingApp.service.ProductService;
 
 import lombok.RequiredArgsConstructor;
@@ -30,7 +29,7 @@ public class ProductController {
 
     @PostMapping("/newProduct")
     @ResponseStatus(HttpStatus.CREATED)
-    public Product createProduct(@RequestBody ProductRequest ProductRequest) {
+    public ProductResponse createProduct(@RequestBody ProductRequest ProductRequest) {
         System.out.println("hi");
         return productService.createProduct(ProductRequest);
     }
