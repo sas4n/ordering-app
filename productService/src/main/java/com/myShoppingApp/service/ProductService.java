@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ProductService {
     private final IProductRepository productRepository;
 
-    public Product createProduct(ProductRequest productRequest) {
+    public ProductResponse createProduct(ProductRequest productRequest) {
         Product product = Product.builder()
                 .name(productRequest.name())
                 .description(productRequest.description())
@@ -28,7 +28,7 @@ public class ProductService {
                 .build();
         productRepository.save(product);
         log.info("product {} is saved", product.getId());
-        return product;
+        return new ProductResponse(product.getId(), product.getName(), product.getDescription(), product.getPrice());
     }
 
     public List<ProductResponse> getAllProducts() {
