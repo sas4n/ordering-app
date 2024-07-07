@@ -1,4 +1,4 @@
-package com.myShoppingApp.productService;
+package com.myShoppingApp.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
