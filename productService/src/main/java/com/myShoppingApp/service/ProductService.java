@@ -2,7 +2,6 @@ package com.myShoppingApp.service;
 
 import java.util.List;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
 import com.myShoppingApp.dto.ProductRequest;
@@ -16,7 +15,6 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-@ComponentScan(basePackages = "com.myShoppingApp.repository")
 public class ProductService {
     private final IProductRepository productRepository;
 
