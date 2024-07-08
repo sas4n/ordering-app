@@ -16,13 +16,11 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;;
 
 @RestController
 @RequestMapping("/api/product")
 @RequiredArgsConstructor
-@ComponentScan(basePackages = "com.myShoppingApp.service")
 public class ProductController {
     @Autowired
     private final ProductService productService;
