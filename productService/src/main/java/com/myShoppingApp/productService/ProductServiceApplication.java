@@ -1,4 +1,4 @@
-package com.myShoppingApp;
+package com.myShoppingApp.productService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

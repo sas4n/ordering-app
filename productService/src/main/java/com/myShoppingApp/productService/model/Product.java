@@ -1,4 +1,4 @@
-package com.myShoppingApp.model;
+package com.myShoppingApp.productService.model;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document(value="product")
+@Document(value = "product")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -22,5 +22,4 @@ public class Product {
     private String description;
     private BigDecimal price;
 
-    
 }

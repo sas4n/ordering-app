@@ -1,13 +1,13 @@
-package com.myShoppingApp.service;
+package com.myShoppingApp.productService.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.myShoppingApp.dto.ProductRequest;
-import com.myShoppingApp.dto.ProductResponse;
-import com.myShoppingApp.model.Product;
-import com.myShoppingApp.repository.IProductRepository;
+import com.myShoppingApp.productService.dto.ProductRequest;
+import com.myShoppingApp.productService.dto.ProductResponse;
+import com.myShoppingApp.productService.model.Product;
+import com.myShoppingApp.productService.repository.IProductRepository;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
