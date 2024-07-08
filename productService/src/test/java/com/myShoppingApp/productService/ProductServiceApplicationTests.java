@@ -1,4 +1,4 @@
-package com.myShoppingApp;
+package com.myShoppingApp.productService;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;

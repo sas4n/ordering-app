@@ -1,4 +1,4 @@
-package com.myShoppingApp.controller;
+package com.myShoppingApp.productService.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.myShoppingApp.dto.ProductRequest;
-import com.myShoppingApp.dto.ProductResponse;
-import com.myShoppingApp.service.ProductService;
+import com.myShoppingApp.productService.dto.ProductRequest;
+import com.myShoppingApp.productService.dto.ProductResponse;
+import com.myShoppingApp.productService.service.ProductService;
 
 import lombok.RequiredArgsConstructor;
 
