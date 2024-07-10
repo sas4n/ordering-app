@@ -3,6 +3,7 @@ package com.myShoppingApp.orderService.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myShoppingApp.orderService.dto.OrderRequest;
+import com.myShoppingApp.orderService.dto.OrderResponse;
 import com.myShoppingApp.orderService.service.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -22,8 +23,8 @@ public class Controller {
 
     @PostMapping("/newOrder")
     @ResponseStatus(HttpStatus.CREATED)
-    public void placeNewOrder(@RequestBody OrderRequest orderRequest) {
-        orderService.placeNewOrder(orderRequest);
+    public OrderResponse placeNewOrder(@RequestBody OrderRequest orderRequest) {
+        return orderService.placeNewOrder(orderRequest);
     }
 
 }
