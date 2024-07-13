@@ -35,6 +35,7 @@ public class Service {
             return new OrderResponse(newOrder.getId(), newOrder.getOrderRefrence(), newOrder.getSkuCode(),
                     newOrder.getPrice(), newOrder.getQuantity());
         }
+        log.info("some error");
         throw new RuntimeException(
                 "The quantity of the requested product with sku code " + orderRequest.skuCode() + " is not enought");
 
