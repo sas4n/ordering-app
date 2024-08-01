@@ -1,4 +1,4 @@
-package com.myShoppingApp.orderService.openAPI;
+package com.myShoppingApp.orderService.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
